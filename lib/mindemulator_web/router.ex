@@ -15,7 +15,8 @@ defmodule MindemulatorWeb.Router do
 
   scope "/", MindemulatorWeb do
     pipe_through :browser # Use the default browser stack
-
+    resources "/challanges", ChallangeController
+    get "/question", ChallangeController, :question
     get "/", PageController, :index
   end
 

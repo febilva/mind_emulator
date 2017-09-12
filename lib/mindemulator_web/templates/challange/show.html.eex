@@ -1,0 +1,18 @@
+<h2>Show Challange</h2>
+
+<ul>
+
+  <li>
+    <strong>Questin:</strong>
+    <%= @challange.questin %>
+  </li>
+
+  <li>
+    <strong>Quest no:</strong>
+    <%= @challange.quest_no %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: challange_path(@conn, :edit, @challange) %></span>
+<span><%= link "Back", to: challange_path(@conn, :index) %></span>
