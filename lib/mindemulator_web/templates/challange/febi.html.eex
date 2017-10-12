@@ -1,56 +1,30 @@
-<div class="container">
-  <div class='rows'>
-
-	<div clas='col-sm-10' style=" background-color: rgba(197, 197, 197, 0.62);height: 546px;margin-top: 50px;">
-		<div class='col-sm-12'>
-		<h3> <center><bold><strong>CALCULATION TRICK -1</strong></bold><center></h3>
-		<center >
-		<div class='col-sm-12' style="background-color: rgba(197, 197, 197, 0.62);height: 346px;margin-top:10px;">
-			<div class='col-sm-12' style="top: 17%;">
-			<form>
-			<h4> <center><bold><strong><i style="margin-right: 14px;" class="fa fa-flag fa-2x" aria-hidden="true"></i>CHALUNGE-1</strong></bold><center></h4>
-  <div class="form-group col-sm-12">
-  <div class='col-sm-6'>
-    <label  for="email" style="background-color: rgba(197, 197, 197, 0.62);padding-left:17px;
-    padding-right: 17px;
-    padding-top: 14px;
-    padding-bottom: 11px;">
-	<label><i class="fa fa-umbrella" aria-hidden="true"></i> 10</label>
-	<label><i class="fa fa-umbrella" aria-hidden="true"></i> 10</label>
-	<label><i class="fa fa-umbrella" aria-hidden="true"></i> 10</label>
-	</label>
-	</div>
-	<div class='col-sm-2'>
-	<i  style="font-size: 44px;"class="fa fa-bars" aria-hidden="true"></i>
-	</div>
-	<div class='col-sm-3'>
-
-    <label style="background-color: rgba(197, 197, 197, 0.62);padding-left:17px;
-    padding-right: 17px;
-    padding-top: 14px;
-    padding-bottom: 11px;">
-	<h4> 10</h4>
-	</label>
-	</div>
-
-  </div>
-  <div class="form-group">
-    <label for="pwd"><input type='text' name='sum' style='width: 122px;
-    border-radius: 5px;
-    border: solid 1px #8e8e8e;
-    background-color: #c8c8c8;'> <i class="fa fa-question" aria-hidden="true" style="
-    font-size: 41px;
-    margin-left: 15px;
-"></i></label>
-  </div>
-
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+<div class="container-fliud">
+	<div class="row top-header">
+		<div class="container">
+			<div class="row">
+				<!-- <img class="logo" src="images/logo.png"> -->
 			</div>
 		</div>
-		</center>
-		</div>
-	</div>
 	</div>
 </div>
-  <!-- <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p> -->
+<div class="clearfix"></div>
+<div class="gr-bg">
+	<!-- #dynamic contents -->
+	<%= for challange <- @challanges do %>
+	<div class="wht-bg">
+		<div class="pr pr2">
+			<img class="q" src="images/apple.png">
+			<span class="hidden-ans"><%= challange.value1 %></span>
+			<span><%= challange.opertor1 %></span>
+			<img class="q" src="images/pinapple.png">
+			<span class="hidden-ans"><%= challange.value2 %></span>
+			<span><%= challange.opertor2 %></span>
+			<img class="q" src="images/banana.png">
+			<span class="hidden-ans"><%= challange.value3 %></span>
+			<!-- <span><img src="images/equal_to.png"></span> -->
+			<span class="answer"><%= challange.result2 %></span>
+		</div>
+	</div>
+<% end %>
+</div>
+<button type="button" class="btn proceed" href="#">Next Level</button>

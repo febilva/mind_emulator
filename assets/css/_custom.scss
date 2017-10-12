@@ -1,35 +1,115 @@
-h4 {
-	font-family: "Open Sans";
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    line-height: 16.4px;
-    padding-left: 18px;
-    padding-right: 18px;
+
+body{
+	background-color: #08d9d6;
+	font-family: 'Lato', Sans-Serif;
+	position:relative;
 }
-h3 {
-	font-family: "Open Sans";
-	font-size: 20px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: 15.4px;
+img{
+	max-width:100%;
 }
-p {
-	font-family: "Open Sans";
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
+.top-header{
+	background-color: #eaeaea;
+	height:95px;
+	margin:0px;
+	width:100%;
+	float:left;
 }
-label {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: 700;
-    padding-left: 12px;
-    font-size: 27px;
-    padding-right: 12px;
+.logo{
+	margin:16px 0px;
+}
+.gr-bg{
+	background-color:transparent;
+	width:auto;
+	text-align:center;
+	margin:0 auto;
+	margin-top:30px;
+	display: table;
+}
+.wht-bg{
+	background-color:#4a4a4a;
+	width:100%;
+	margin:0 auto;
+	margin-top:30px;
+	color:#fff;
+	font-size:50px;
+	text-align:left;
+	display:table;
+	padding:15px 42px;
+	box-shadow:0px 3px 5px #555;
+}
+.pr1, .pr2, .pr3{
+	margin: 0 auto;
+    display: table;
+}
+.q{
+	color:#fff;
+	float:left;
+	background-color:transparent;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	padding:8px;
+	cursor:pointer;
+}
+.wht-bg img{
+	float:left;
+	background-color:#fff;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	padding:8px;
+	margin:0px 2px;
+}
+.wht-bg span{
+	text-align:center;
+	float:left;
+	line-height:50px;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	padding:8px;
+}
+.answer{
+	background-color:#fff;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	padding:8px;
+	font-size:25px;
+	color:#555;
+	line-height:45px !important;
+	font-weight:bold;
+}
+.hidden-ans{
+	display:none;
+	background-color:#fff;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	padding:8px;
+	font-size:25px;
+	color:#555;
+	line-height:45px !important;
+	font-weight:bold;
+}
+.proceed, .proceed:hover, .proceed:focus{
+	text-decoration:none;
+	color:#fff;
+	background-color:#4a4a4a;
+	font-weight:700;
+	margin:25px auto 34px !important;
+	display:table;
+	font-size:18px;
+	box-shadow:0px 3px 5px #555;
+	outline:0;
+	border-radius:0px;
+	padding:10px 30px;
+}
+footer{
+	background-color:rgba(0,0,0,0.67);
+	font-size:15px;
+	color:#fff;
+	text-align:center;
+	padding:25px 0px;
+	margin-top:23px;
 }
