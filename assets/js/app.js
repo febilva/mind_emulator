@@ -19,3 +19,10 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+$(".pr .q, .pr img").click(function(){
+    $(this).next().toggle();
+});
+$(".q, .pr img").click(function(){
+	$(this).hide();
+});
